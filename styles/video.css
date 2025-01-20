@@ -1,0 +1,84 @@
+ 
+.thumbnail {
+    width: 100%;
+}
+.thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.video-title {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 0;
+    line-height: 20px;
+}
+.video-author, .video-stats {
+    font-size: 12px;
+    color: grey;
+
+}
+.video-author {
+  margin-bottom: 4px;
+}
+
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.profile-pic {
+    width: 36px;
+    border-radius: 50px;
+}
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+    /*text-decoration: underline; this is called inheritance, which means the property gets passed down 
+    to the others. inheritence works with text properties*/
+    /*we can also use semantic elements instead of divs. google semantic elements*/
+}
+
+@media (max-width: 750px) { /*this adds a responsive element to the design when resizing*/
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 1000px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/*@media (min-width: 750px) and (max-width: 999px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    {
+        grid-template-columns: 1fr 1fr; 
+    }
+} n:B check how to properly combine them*/
+
+.video-time {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    /*padding: 4px; setting padding is the same as applying it to all 4 sides. if you add 2 values,
+    the 1st value will apply to top n bottom and the second one will apply to left and right.
+    it can also take up all 4 values for all sides. margin also has these properties*/
+    /*border: 1px solid  rgb(255, 255, 255); border can take all elements at once*/
+    border-radius: 2px;
+}

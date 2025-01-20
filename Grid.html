@@ -1,0 +1,60 @@
+<!DOCTYPE
+<html>
+    <head>
+        <title>
+            CSS grid practice
+        </title>
+    </head>
+    <body style="padding-bottom: 1000px;">
+        <div style="
+        display: grid;
+        grid-template-columns: 100px 100px;
+        ">
+            <div style="background-color: aqua;">div 1</div> <!--This is a way of using css styles inside html.
+            however, we do not use it in real websites. in real websites we put css in a different file like we did with buttons-->
+            <div style="background-color: lightpink;">div 2 <p>text</p></div> 
+        </div>
+        <div style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100px 100px 200px; 
+        "> <!--the grid template dtermines the number of columns we have and the column's size-->
+            <div style="background-color: aqua;">div 1</div> <!--This is a way of using css styles inside html.
+            however, we do not use it in real websites. in real websites we put css in a different file like we did with buttons-->
+            <div style="background-color: lightpink;">div 2 <p>text</p></div> 
+            <div style="background-color: aqua;">div 3</div>
+        </div>
+        <div style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        "> <!--fr means that the grid can take up the remaining space and the number before it determines how much 
+        of the space it should take. eg. 1 says it should take 1-->
+            <div style="background-color: aqua;">div 1</div> 
+            <div style="background-color: lightpink;">div 2 <p>text</p></div> 
+        </div>
+        <div style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100px 1fr 1fr;
+        "> <!--if the fr both have 1, they share the space equally and if not they divide according to the number -->
+            <div style="background-color: aqua;">div 1</div> 
+            <div style="background-color: lightpink;">div 2 <p>text</p></div> 
+            <div style="background-color: aqua;">div 1</div> 
+        </div>
+        <div style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
+        "> 
+            <div style="background-color: aqua; height: 200px;">1fr</div> 
+            <div style="background-color: lightpink; height: 200px; ">1fr</div> 
+            <div style="background-color: aqua; height: 200px; ">1fr</div> 
+            <div style="background-color: lightpink; height: 200px; ">1fr</div> 
+            <div style="background-color: aqua; height: 200px; ">1fr</div> 
+            <div style="background-color: lightpink; height: 200px; ">1fr</div> 
+        </div>
+    </body>
+</html>
